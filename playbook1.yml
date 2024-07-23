@@ -1,0 +1,7 @@
+---
+- name: Reboot server
+  hosts: dbserver
+  tasks:
+
+    - name: reboot dbserver
+      ansible.builtin.reboot:
