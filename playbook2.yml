@@ -1,0 +1,9 @@
+---
+- name: Install httpd
+  hosts: dbserver
+  tasks:
+
+    - name: install http
+      ansible.builtin.dnf:
+        name: httpd
+        state: latest
